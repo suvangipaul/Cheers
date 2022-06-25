@@ -14,13 +14,15 @@
     margin-top: -5rem;
     border-radius: 15px;
 }
-.book-options{
+
+.book-options {
     display: flex;
     justify-content: space-between;
     padding: 3.5rem 2rem;
     height: 3rem;
 }
-.book-options-items{
+
+.book-options-items {
     border: 2px solid #697232;
     background-color: #D9D9D900;
     border-radius: 5px;
@@ -29,7 +31,13 @@
     color: #697232;
     width: 10rem;
 }
-.book-options-items::placeholder{
+
+.book-options-items::placeholder {
     color: #697232;
     font-size: medium;
+}
+
+.drink-variety {
+    display: flex;
+    margin: 0 5rem;
 }
