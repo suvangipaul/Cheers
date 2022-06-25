@@ -1,0 +1,37 @@
+.trending-containter {
+    display: flex;
+}
+
+.trending-content {
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    justify-content: center;
+    margin: 0 5rem
+}
+
+.drinks {
+    border-radius: 2rem;
+    height: 10rem;
+}
+
+.drink-bg {
+    width: 20rem;
+    background: rgba(24, 24, 24, 0.79);
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(30px);
+    margin-top: -1rem;
+    border-radius: 15px;
+    color: #697232;
+    padding: 1rem;
+}
+
+.drink-effect {
+    border: 2px solid #697232;
+    background-color: #D9D9D900;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    color: #697232;
+    width: 100%;
+}
