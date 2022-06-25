@@ -11,6 +11,22 @@ const hotelRoute = require('./routes/hotels.routes')
 const PORT = process.env.PORT || 4000
 const app = express()
 
+// routes
+app.use(express.static(path.join(__dirname, "./client/build")))
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+app.get('/explore', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+app.get('/bar', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+app.get('/charity', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+
+
 //middleware
 app.use(express.json())
 app.use(cors())
@@ -26,25 +42,6 @@ db.once('open', () => {
 app.use('/hotels', hotelRoute)
 // app.use('/api', userRoute)
 
-app.use(express.static(path.join(__dirname, "./client/build")))
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/build', "index.html"))
-})
-
-app.use(express.static(path.join(__dirname, "./client/build")))
-app.get('/explore', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/build', "index.html"))
-})
-
-app.use(express.static(path.join(__dirname, "./client/build")))
-app.get('/bar', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/build', "index.html"))
-})
-
-app.use(express.static(path.join(__dirname, "./client/build")))
-app.get('/charity', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/build', "index.html"))
-})
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
