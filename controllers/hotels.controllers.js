@@ -1,8 +1,9 @@
 const HotelSchema = require('../models/hotels.models')
 
 const createHotel = async(req, res) => {
+    const data = req.body
     try {
-        const hotel_data = await HotelSchema.create(hotel_data)
+        const hotel_data = await HotelSchema.create(data)
         res.send(hotel_data)
     } catch (error) {
         res.send(error)
