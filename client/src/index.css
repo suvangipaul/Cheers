@@ -8,6 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Parisienne', cursive;
+  background-color: #090B0A;
+  color: white;
 }
 
 code {
