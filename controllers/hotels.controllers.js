@@ -1,5 +1,15 @@
 const HotelSchema = require('../models/hotels.models')
 
+const createHotel = async(req, res) => {
+    try {
+        const hotel_data = await HotelSchema.create(hotel_data)
+        res.send(hotel_data)
+    } catch (error) {
+        res.send(error)
+    }
+}
+
+
 const getHotel = async(req, res) => {
     try {
         const hotel_data = await HotelSchema.find()
@@ -41,6 +51,7 @@ const updateHotel = async(req, res) => {
 }
 
 module.exports = {
+    createHotel,
     getHotel,
     deleteHotel,
     getOneHotel,
