@@ -1,7 +1,9 @@
 import React from 'react'
 import './header.styles.css'
-
+import { useDesoAuth } from '../../context/desoauthcontext'
 const Header = () => {
+  const { user, LoginDeso, LogoutDeso } = useDesoAuth()
+  console.log(user)
   return (
     <div className="navbar">
       <div className="brand-logo">
@@ -23,7 +25,19 @@ const Header = () => {
           </li>
         </ul>
       </div>
-        <button className='connect'>Connect Wallet</button>
+        { !user && (
+          <div>
+            <button className='connect' onClick={LoginDeso}>Connect Wallet</button>
+          </div>
+        )}
+        {
+          user && (
+          <div>
+            <button className='connect' onClick={LogoutDeso && console.log(user)}>Disconnect</button>
+          </div>
+          )
+        }
+        
     </div>
   )
 }
