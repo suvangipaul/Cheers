@@ -2,6 +2,7 @@ import React from "react";
 import "./explore.styles.css";
 import { Drink1, Drink2, Drink3, exploreMain } from "../../assets";
 import Trending from "../../components/trending/trending.components";
+
 const Explore = () => {
   return (
     <div className="explore">
