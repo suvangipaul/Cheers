@@ -3,7 +3,9 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const cors = require('cors')
 dotenv.config()
+const path = require('path')
 const hotelRoute = require('./routes/hotels.routes')
+// const userRoute = require('./routes/users.routes')
 
 //configuration
 const PORT = process.env.PORT || 4000
@@ -14,7 +16,7 @@ app.use(express.json())
 app.use(cors())
 
 // database connections
-mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect(process.env.MONGODB_DATABASE_URL)
 const db = mongoose.connection
 db.once('open', () => {
     console.log('Database is connected')
@@ -22,9 +24,11 @@ db.once('open', () => {
 
 //routes
 app.use('/hotels', hotelRoute)
+// app.use('/api', userRoute)
 
+app.use(express.static(path.join(__dirname, "./client/build")))
 app.get('/', (req, res) => {
-    res.send('Server is Running')
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
 })
 
 app.listen(PORT, () => {
