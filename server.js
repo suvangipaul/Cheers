@@ -31,6 +31,21 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './client/build', "index.html"))
 })
 
+app.use(express.static(path.join(__dirname, "./client/build")))
+app.get('/explore', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+
+app.use(express.static(path.join(__dirname, "./client/build")))
+app.get('/bar', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+
+app.use(express.static(path.join(__dirname, "./client/build")))
+app.get('/charity', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', "index.html"))
+})
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
 })
