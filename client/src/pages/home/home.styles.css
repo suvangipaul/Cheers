@@ -1,0 +1,125 @@
+.home-page {
+    margin: 0 4rem 0 5rem;
+}
+
+.home-main img {
+    height: 40rem;
+    padding-left: 35rem;
+}
+
+.home-main h1 {
+    margin-top: -25rem;
+    font-size: 7rem;
+    padding: 0 13rem 0 12rem;
+    text-align: center;
+}
+
+.gap1 {
+    margin-top: 17rem;
+}
+
+.main-new {
+    display: flex;
+}
+
+.new-left {
+    padding: 3rem;
+}
+
+.blur1 {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    background: rgba(24, 24, 24, 0.79);
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    margin-left: -4rem;
+    z-index: -2;
+}
+
+.new-left img {
+    margin-top: -6rem;
+    height: 40rem;
+}
+.blur2 {
+    height: 10rem;
+    width: 10rem;
+    background: rgba(24, 24, 24, 0.79);
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    margin-left: 22rem;
+    margin-top: -6rem;
+}
+.new-text{
+    margin-top: 10rem;
+    text-align: center;
+}
+.text-title{
+    font-size: 4rem;
+}
+.para-first{
+    color: #A0A0A0;
+    font-size: 2rem;
+}
+.para-sec{
+    font-size: 2rem;
+}
+.new-book{
+    margin-top: 4rem;
+    width: 20rem;
+    height: 3rem;
+    border: 2px solid #5B5B5B;
+    border-radius: 2rem;
+    background-color: black;
+    color: #5B5B5B;
+}
+.new-book:hover{
+    cursor: pointer;
+}
+.main-serve{
+    display: flex;
+}
+.blur3 {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    background: rgba(24, 24, 24, 0.79);
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    margin-left: 48rem;
+    z-index: -2;
+}
+.serve-image img{
+    margin-left: 25rem;
+    height: 40rem;
+    margin-top: -6rem;
+}
+.blur4 {
+    height: 10rem;
+    width: 10rem;
+    background: rgba(24, 24, 24, 0.79);
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    margin-left: 20rem;
+    margin-top: -5rem;
+}
+.serve-text{
+    margin-top: 7rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+.stext-1{
+    color: #A0A0A0;
+    font-size: 2rem;
+}
+.stext-2{
+    margin-top: 15rem;
+    font-size: 2rem;
+}
+.stext-3{
+    font-size: 2rem;
+}
