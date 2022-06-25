@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+// model Item {
+//   id        BigInt   @id(map: "primary") @default(autoincrement())
+//   title     String   @unique
+//   userId BigInt  @unique
+//   User   User    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_userId_ref_User")
+// }
+model Item {
+  id    String @id
+  title     String   @unique
+  User  User   @relation(fields: [id], references: [id])
+}
+
+model User {
+  id      String    @id @default(cuid()) @map("_id") @db.String()
+  name    String?  
+  email   String   @unique
+  Item    Item[]
+}
