@@ -10,8 +10,6 @@
 - GraphQL
 - NodeJs and ExpressJs
 
-
-
 ## Inspiration 
 
 ## What it does 
