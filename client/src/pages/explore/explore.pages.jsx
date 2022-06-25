@@ -1,6 +1,7 @@
 import React from 'react'
 import './explore.styles.css'
-import { Drink1, Drink2, Drink3, exploreMain } from '../../assets';
+// Drink1, Drink2, Drink3,
+import {  exploreMain } from '../../assets';
 
 const Explore = () => {
     return (
