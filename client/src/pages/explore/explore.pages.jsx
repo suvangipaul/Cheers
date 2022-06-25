@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 import React from "react";
 import "./explore.styles.css";
 import { Drink1, Drink2, Drink3, exploreMain } from "../../assets";
 import Trending from "../../components/trending/trending.components";
-=======
-import React from 'react'
-import './explore.styles.css'
-// Drink1, Drink2, Drink3,
-import {  exploreMain } from '../../assets';
->>>>>>> 6e20bbfbad827fdeb3938f64f612fd512c210303
 
 const Explore = () => {
   return (
