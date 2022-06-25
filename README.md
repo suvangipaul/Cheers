@@ -6,10 +6,11 @@
 ##  Tech Stack
 
 - ReactJs
-- MongoDB
 - GraphQL
 - NodeJs and ExpressJs
-
+- Deso - *Authentication*
+- Prisma ORM
+- MongoDB and CockroachDB
 ## Inspiration 
 
 ## What it does 
