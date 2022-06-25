@@ -5,3 +5,8 @@ export { default as Main } from "./main.png";
 export { default as newImage } from "./new-image.png";
 export { default as newImage2 } from "./new-image2.png";
 export { default as exploreMain } from "./explore-main.png";
+export { default as NewsBG } from './newsbg.png' 
+export { default as WireKid } from './news_thumb.png'
+export { default as RedApples } from './redapple.png'
+export { default as TowerThumb } from './tower_thumb.png'
+export { default as Violin } from './violin.png'
