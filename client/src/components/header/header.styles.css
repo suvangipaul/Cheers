@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+.brand-logo{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.nav_options ul{
+    display: flex;
+    list-style: none;
+}
+.nav_options li{
+    margin: 0 1.5rem;
+}
+.nav_options li a{
+    text-decoration: none;
+    border: none;
+    color: white;   
+}
+.nav_options li a:hover{
+    border-bottom: 2px solid;
+}
+.connect{
+    background-color: #090B0A;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3rem;
+    padding: .7rem;
+}
+.connect:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.12);  
+    transition: 1s;
+}
